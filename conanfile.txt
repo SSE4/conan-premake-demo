@@ -1,0 +1,7 @@
+[requires]
+opencv/3.4.3@conan/stable
+[generators]
+premake
+virtualenv
+[build_requires]
+premake_installer/5.0.0-alpha12@bincrafters/stable
