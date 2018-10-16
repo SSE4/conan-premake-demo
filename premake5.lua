@@ -1,6 +1,6 @@
 -- premake5.lua
 
-require 'conanpremake'
+require 'conanbuildinfo'
 
 workspace "ConanPremakeDemo"
    configurations { "Debug", "Release" }
