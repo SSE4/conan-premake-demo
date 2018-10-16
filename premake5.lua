@@ -14,14 +14,16 @@ workspace "ConanPremakeDemo"
     system "Windows"
     architecture "x64"
 
-   includedirs { conan_includedirs }
-   libdirs { conan_libdirs }
-   links { conan_libs }
 
 project "ConanPremakeDemo"
    kind "ConsoleApp"
    language "C++"
    targetdir "bin/%{cfg.buildcfg}"
+
+   includedirs { conan_includedirs }
+   libdirs { conan_libdirs }
+   links { conan_libs }
+   linkoptions { conan_exelinkflags }
 
    files { "**.h", "**.cpp" }
 
